@@ -12,7 +12,9 @@ Bạn cần tạo một thư mục là tên của package bạn muốn viết. C
 * js: viết theo cấu trúc module, export các thành phần. Khi require package chính là thực hiện require file này.
 
 ## B4: Tạo package
+```
     4.1 Tạo file package.json
+
     {
         "name": "tets1",
         "version": "0.1.2",
@@ -24,3 +26,28 @@ Bạn cần tạo một thư mục là tên của package bạn muốn viết. C
             "tets1": "^0.1.0"
         }
     }
+
+```
+
+```
+    4.2 Nội dung của chương trình
+    Tiếp theo, mình tạo file index.js với nội dung như sau:
+
+    //Code
+    const sum = (a,b)=>a+b
+    const multiplication= (a,b)=> a*b
+
+    exports.sum=sum
+    exports.multiplication=multiplication
+```
+
+## B5: Publish package lên NPM
+1. Đầu tiên, bạn sẽ cần đăng nhập vào npm.
+
+   * npm login
+
+2. Tiếp theo, cùng đẩy package lên để chia sẻ với mọi người nhé. Nếu đây là lần đầu tiên publish package trên NPM,  bạn sẽ cần xác nhận với địa chỉ email đã đăng ký.
+   * npm publish
+
+
+### Chuc ban thanh cong
